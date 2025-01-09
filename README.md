@@ -1,64 +1,104 @@
-# Design Patterns in Practice C#
+# 📚 Design Patterns in Practice - C#
 
-- https://refactoring.guru/design-patterns
-- https://www.dofactory.com/net/design-patterns  
+This document provides a catalog of design patterns in C#, explaining their purpose, advantages, and disadvantages. The patterns are grouped into the following categories:
 
-## Design Pattern Catalog
+- **Creational**
+- **Structural**
+- **Behavioral**
 
-- **_Creational_**: Provide ways to create objects and define how they will be instantiated.  
-	- **Singleton**: Ensures a single instance of a class is created and shared across all resources.  
-		- Pros:  
-			- Ensures a class has only one instance.  
-			- Provides a global access point to that instance.  
-			- The singleton object is initialized only when requested for the first time.  
-		- Cons:  
-			- Violates the single responsibility principle. The pattern solves two problems at once.  
-			- Can mask bad design, for instance, when program components know too much about each other.  
-			- Requires special handling in a multithreaded environment to prevent multiple threads from creating multiple singleton objects.  
-			- It can be challenging to perform unit testing on client code using Singleton because many testing frameworks rely on inheritance when producing mock objects. Since the singleton class constructor is private and overriding static methods is impossible in most languages, you will need a creative approach to mock the singleton. Or simply avoid testing it. Or don’t use the Singleton pattern.  
+## 📖 Design Pattern Catalog
 
-	- **Builder**: Allows constructing complex objects step by step.  
-		- Pros:  
-			- Can construct objects step by step, defer construction steps, or run steps recursively.  
-			- Can reuse the same construction code for creating different representations of products.  
-			- Single responsibility principle. You can isolate complex construction code from the business logic of the product.  
-		- Cons:  
-			- The overall code complexity increases because the pattern requires creating multiple new classes.  
+### 🔧 Creational Patterns
+Creational patterns provide ways to instantiate objects while abstracting the instantiation process.
 
-- **_Structural_**: Deal with the composition of objects using inheritance and interfaces for various functionalities.  
-	- **Adapter**: Makes objects with incompatible interfaces work together.  
-		- Pros:  
-			- Single responsibility principle. You can separate interface or data conversion from the primary business logic of the program.  
-			- Open/closed principle. You can introduce new types of adapters into the program without breaking existing client code, as long as they work through the client interface.  
-		- Cons:  
-			- The overall code complexity increases because you need to introduce a set of new interfaces and classes. Sometimes it’s simpler to modify the service class to fit the rest of your code.  
+### 🟢 Singleton
+Ensures that a class has only one instance and provides a global access point to that instance.
 
-- **_Behavioral_**: Focus on interactions and communication between objects, as well as the division of responsibilities.  
-	- **Command**: Encapsulates a command request into an object.  
-		- Pros:  
-			- Single responsibility principle. You can decouple classes that invoke operations from those that perform these operations.  
-			- Open/closed principle. You can introduce new commands into the application without breaking existing client code.  
-			- Enables undo/redo functionality.  
-			- Allows deferred execution of operations.  
-			- Can assemble a set of simple commands into a complex one.  
-		- Cons:  
-			- The code may become more complex because you are introducing a new layer between senders and receivers.  
+**Pros:**
+- Ensures a single instance of a class is created.
+- Provides a global access point to that instance.
+- Lazy initialization — only created when first accessed.
 
-	- **Memento**: Captures and restores an object’s internal state without violating encapsulation.  
-		- Pros:  
-			- Ensures encapsulation by not exposing the implementation details of an object’s state.  
-			- Facilitates undo functionality without coupling the object’s state-handling logic to the client.  
-		- Cons:  
-			- Can increase memory usage if many mementos are created or if the saved state is large.  
-			- The caretaker must manage the lifecycle of mementos carefully, which adds complexity.  
+**Cons:**
+- Violates the **Single Responsibility Principle** by solving two problems at once (instance control and global access).
+- Can hide poor design when components are overly dependent on each other.
+- Requires special handling in multithreaded environments to avoid multiple instances.
+- Difficult to mock and unit test due to the private constructor and static access.
 
-- **_Structural/Behavioral_**: Patterns that can manage both data access and interaction between objects.  
-	- **Repository**: Abstracts data access logic to centralize and encapsulate querying and persistence logic.  
-		- Pros:  
-			- Separates business logic from data access logic, adhering to the single responsibility principle.  
-			- Provides a consistent API for accessing data, making it easier to switch between data sources or models.  
-			- Facilitates testing by allowing mock repositories to replace actual data sources.  
-		- Cons:  
-			- May become overly complex if not carefully designed, particularly if it tries to support many use cases.  
-			- Can introduce additional layers of abstraction, which might not always be necessary or beneficial.  
+### 🛠 Builder
+Allows creating complex objects step by step, improving code readability.
+
+**Pros:**
+- Simplifies the creation of complex objects.
+- Allows building different representations of an object using the same construction code.
+- Follows the **Single Responsibility Principle** by separating the object construction logic from business logic.
+
+**Cons:**
+- Increases code complexity by requiring multiple new classes.
+- May introduce unnecessary layers if the object construction is simple.
+
+---
+
+### 🏗 Structural Patterns
+Structural patterns focus on the composition of objects, ensuring that interfaces and implementations work together effectively.
+
+### 🔄 Adapter
+Allows objects with incompatible interfaces to work together by creating a bridge between them.
+
+**Pros:**
+- Follows the **Single Responsibility Principle** by separating the interface adaptation logic from the main business logic.
+- Adheres to the **Open/Closed Principle**, enabling the introduction of new adapters without modifying existing client code.
+
+**Cons:**
+- Increases code complexity by introducing additional interfaces and classes.
+- In some cases, modifying the original service class may be simpler.
+
+---
+
+### 🧩 Behavioral Patterns
+Behavioral patterns manage interactions and communications between objects, focusing on the division of responsibilities.
+
+### 📋 Command
+Encapsulates a request as an object, thereby allowing parameterization of clients with different requests, delayed execution, and undoable operations.
+
+**Pros:**
+- Follows the **Single Responsibility Principle** by decoupling the sender from the receiver.
+- Adheres to the **Open/Closed Principle** by allowing new commands to be added without modifying existing code.
+- Supports undo/redo functionality.
+- Enables deferred execution of commands.
+
+**Cons:**
+- Increases code complexity by introducing a new layer between senders and receivers.
+
+### 🕰 Memento
+Captures and restores an object’s internal state without violating encapsulation.
+
+**Pros:**
+- Preserves encapsulation by not exposing an object’s internal state to other classes.
+- Facilitates undo functionality without coupling the state management logic to the client.
+
+**Cons:**
+- Can increase memory usage when storing large or numerous states.
+- The caretaker must manage the lifecycle of mementos carefully, which adds complexity.
+
+---
+
+### ⚙️ Structural/Behavioral Patterns
+These patterns address both the composition and interaction of objects, managing data access and communication between them.
+
+### 📂 Repository
+Abstracts data access logic to centralize and encapsulate querying and persistence logic.
+
+**Pros:**
+- Separates business logic from data access logic, adhering to the **Single Responsibility Principle**.
+- Provides a consistent API for data access, making it easier to switch data sources or models.
+- Facilitates testing by allowing mock repositories to replace actual data sources.
+
+**Cons:**
+- May become overly complex if it tries to support too many use cases.
+- Introduces additional layers of abstraction, which might not always be necessary.
+
+## 📌 References
+- [Refactoring Guru](https://refactoring.guru/design-patterns)  
+- [DoFactory](https://www.dofactory.com/net/design-patterns)
 
