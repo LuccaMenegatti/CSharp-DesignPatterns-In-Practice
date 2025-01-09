@@ -1,10 +1,10 @@
-﻿using AtividadeEmGrupoP2.Domain.Entities;
-using AtividadeEmGrupoP2.Infra.Database.Interface;
-using AtividadeEmGrupoP2.Infra.Database.Mappers;
+﻿using CSharpDesignPatternsInPractice.Domain.Entities;
+using CSharpDesignPatternsInPractice.Infra.Database.Interface;
+using CSharpDesignPatternsInPractice.Infra.Database.Mappers;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
-namespace AtividadeEmGrupoP2.Infra.Database;
+namespace CSharpDesignPatternsInPractice.Infra.Database;
 
 public class ApplicationDbContext(
     DbContextOptions<ApplicationDbContext> options,

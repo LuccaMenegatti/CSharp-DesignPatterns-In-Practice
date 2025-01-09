@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using AtividadeEmGrupoP2.Infra.Database;
-using AtividadeEmGrupoP2.Infra.Database.Interface;
-using AtividadeEmGrupoP2.Infra.Extensions;
+using CSharpDesignPatternsInPractice.Infra.Database;
+using CSharpDesignPatternsInPractice.Infra.Database.Interface;
+using CSharpDesignPatternsInPractice.Infra.Extensions;
 
-namespace AtividadeEmGrupoP2.Api.Configurations;
+namespace CSharpDesignPatternsInPractice.Api.Configurations;
 
 public static class DbContextConfigurations
 {

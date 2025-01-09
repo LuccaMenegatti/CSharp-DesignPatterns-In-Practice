@@ -1,8 +1,8 @@
-﻿using AtividadeEmGrupoP2.Api.Filters;
+﻿using CSharpDesignPatternsInPractice.Api.Filters;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 
-namespace AtividadeEmGrupoP2.Api.Configurations;
+namespace CSharpDesignPatternsInPractice.Api.Configurations;
 
 public static class ApiConfiguration
 {

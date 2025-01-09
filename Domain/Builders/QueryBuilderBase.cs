@@ -1,6 +1,6 @@
-﻿using AtividadeEmGrupoP2.Domain.Entities.Common;
+﻿using CSharpDesignPatternsInPractice.Domain.Entities.Common;
 
-namespace AtividadeEmGrupoP2.Domain.Builders;
+namespace CSharpDesignPatternsInPractice.Domain.Builders;
 
 public abstract class QueryBuilderBase<TBuilder, TEntity, TRequest> where TEntity : AuditableEntityBase<Guid>
 {

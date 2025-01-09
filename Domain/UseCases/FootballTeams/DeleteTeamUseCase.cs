@@ -1,7 +1,7 @@
-﻿using AtividadeEmGrupoP2.Domain.Command;
-using AtividadeEmGrupoP2.Infra.Repositories.Interfaces;
+﻿using CSharpDesignPatternsInPractice.Domain.Command;
+using CSharpDesignPatternsInPractice.Infra.Repositories.Interfaces;
 
-namespace AtividadeEmGrupoP2.Domain.UseCases.FootballTeams;
+namespace CSharpDesignPatternsInPractice.Domain.UseCases.FootballTeams;
 
 public class DeleteTeamUseCase(IFootballTeamRepository footballTeamRepository) : IDeleteTeamUseCase
 {

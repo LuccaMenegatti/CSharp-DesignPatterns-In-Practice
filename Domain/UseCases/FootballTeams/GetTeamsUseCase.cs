@@ -1,11 +1,11 @@
-﻿using AtividadeEmGrupoP2.Domain.Builders;
-using AtividadeEmGrupoP2.Domain.Dtos.Request;
-using AtividadeEmGrupoP2.Domain.Entities;
-using AtividadeEmGrupoP2.Domain.ValueObjects.Pagination;
-using AtividadeEmGrupoP2.Infra.Extensions;
-using AtividadeEmGrupoP2.Infra.Repositories.Interfaces;
+﻿using CSharpDesignPatternsInPractice.Domain.Builders;
+using CSharpDesignPatternsInPractice.Domain.Dtos.Request;
+using CSharpDesignPatternsInPractice.Domain.Entities;
+using CSharpDesignPatternsInPractice.Domain.ValueObjects.Pagination;
+using CSharpDesignPatternsInPractice.Infra.Extensions;
+using CSharpDesignPatternsInPractice.Infra.Repositories.Interfaces;
 
-namespace AtividadeEmGrupoP2.Domain.UseCases.FootballTeams;
+namespace CSharpDesignPatternsInPractice.Domain.UseCases.FootballTeams;
 
 public class GetTeamsUseCase(IFootballTeamRepository _footballTeamRepository) : IGetTeamsUseCase
 {

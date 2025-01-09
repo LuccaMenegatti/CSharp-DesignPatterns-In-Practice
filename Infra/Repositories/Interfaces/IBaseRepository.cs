@@ -1,4 +1,4 @@
-﻿namespace AtividadeEmGrupoP2.Infra.Repositories.Interfaces;
+﻿namespace CSharpDesignPatternsInPractice.Infra.Repositories.Interfaces;
 
 public interface IBaseRepository<TEntity> where TEntity : class
 {

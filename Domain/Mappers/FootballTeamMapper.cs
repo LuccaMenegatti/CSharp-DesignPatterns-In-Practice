@@ -1,7 +1,7 @@
-﻿using AtividadeEmGrupoP2.Domain.Dtos.Request;
-using AtividadeEmGrupoP2.Domain.Entities;
+﻿using CSharpDesignPatternsInPractice.Domain.Dtos.Request;
+using CSharpDesignPatternsInPractice.Domain.Entities;
 
-namespace AtividadeEmGrupoP2.Domain.Mappers;
+namespace CSharpDesignPatternsInPractice.Domain.Mappers;
 
 public static class FootballTeamMapper
 {

@@ -1,9 +1,10 @@
-﻿using AtividadeEmGrupoP2.Domain.UseCases.FootballPlayers;
-using AtividadeEmGrupoP2.Domain.UseCases.FootballTeams;
-using AtividadeEmGrupoP2.Infra.Repositories;
-using AtividadeEmGrupoP2.Infra.Repositories.Interfaces;
+﻿using CSharpDesignPatternsInPractice.Domain.UseCases.FootballPlayers;
+using CSharpDesignPatternsInPractice.Domain.UseCases.FootballTeams;
+using CSharpDesignPatternsInPractice.Infra.Repositories;
+using CSharpDesignPatternsInPractice.Infra.Repositories.Interfaces;
+using CSharpDesignPatternsInPractice.Infra.Repositories;
 
-namespace AtividadeEmGrupoP2.Api.Configurations;
+namespace CSharpDesignPatternsInPractice.Api.Configurations;
 
 public static class DependencyInjectionConfigurations
 {

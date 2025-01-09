@@ -1,7 +1,7 @@
-﻿using AtividadeEmGrupoP2.Infra.Repositories.Interfaces;
+﻿using CSharpDesignPatternsInPractice.Infra.Repositories.Interfaces;
 using System.ComponentModel.DataAnnotations;
 
-namespace AtividadeEmGrupoP2.Domain.Command;
+namespace CSharpDesignPatternsInPractice.Domain.Command;
 
 public class DeleteTeamCommand(Guid teamId, IFootballTeamRepository footballTeamRepository)
 {

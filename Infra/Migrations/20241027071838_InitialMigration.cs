@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace AtividadeEmGrupoP2.Infra.Migrations
+namespace CSharpDesignPatternsInPractice.Infra.Migrations
 {
     /// <inheritdoc />
     public partial class InitialMigration : Migration

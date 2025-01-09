@@ -1,9 +1,10 @@
-﻿using AtividadeEmGrupoP2.Domain.Entities;
-using AtividadeEmGrupoP2.Infra.Database.Interface;
-using AtividadeEmGrupoP2.Infra.Repositories.Interfaces;
+﻿using CSharpDesignPatternsInPractice.Domain.Entities;
+using CSharpDesignPatternsInPractice.Infra.Database.Interface;
+using CSharpDesignPatternsInPractice.Infra.Repositories.Interfaces;
+using CSharpDesignPatternsInPractice.Infra.Repositories;
 using Microsoft.EntityFrameworkCore;
 
-namespace AtividadeEmGrupoP2.Infra.Repositories;
+namespace CSharpDesignPatternsInPractice.Infra.Repositories;
 
 public class FootballTeamRepository(IApplicationDbContext dbContext) : BaseRepository<FootballTeamEntity>(dbContext),
     IFootballTeamRepository

@@ -1,8 +1,8 @@
-﻿using AtividadeEmGrupoP2.Domain.Entities;
+﻿using CSharpDesignPatternsInPractice.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace AtividadeEmGrupoP2.Infra.Database.Mappers;
+namespace CSharpDesignPatternsInPractice.Infra.Database.Mappers;
 
 public static class FootballTeamEntityMap
 {

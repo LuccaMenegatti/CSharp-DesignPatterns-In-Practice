@@ -1,4 +1,4 @@
-﻿namespace AtividadeEmGrupoP2.Domain.ValueObjects.Pagination;
+﻿namespace CSharpDesignPatternsInPractice.Domain.ValueObjects.Pagination;
 
 public class PaginatedResult<T> where T : class
 {

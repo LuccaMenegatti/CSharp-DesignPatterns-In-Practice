@@ -1,6 +1,6 @@
-﻿using AtividadeEmGrupoP2.Domain.Entities;
+﻿using CSharpDesignPatternsInPractice.Domain.Entities;
 
-namespace AtividadeEmGrupoP2.Domain.Memento.FootballPlayer;
+namespace CSharpDesignPatternsInPractice.Domain.Memento.FootballPlayer;
 
 public class FootballPlayerCaretaker
 {

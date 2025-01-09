@@ -1,10 +1,10 @@
-﻿using AtividadeEmGrupoP2.Domain.CustomExceptions;
-using AtividadeEmGrupoP2.Domain.Entities.Common;
-using AtividadeEmGrupoP2.Infra.Database.Interface;
-using AtividadeEmGrupoP2.Infra.Repositories.Interfaces;
+﻿using CSharpDesignPatternsInPractice.Domain.CustomExceptions;
+using CSharpDesignPatternsInPractice.Domain.Entities.Common;
+using CSharpDesignPatternsInPractice.Infra.Database.Interface;
+using CSharpDesignPatternsInPractice.Infra.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace AtividadeEmGrupoP2.Infra.Repositories;
+namespace CSharpDesignPatternsInPractice.Infra.Repositories;
 
 public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : AuditableEntityBase<Guid>
 {

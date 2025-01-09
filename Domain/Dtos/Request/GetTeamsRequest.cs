@@ -1,6 +1,6 @@
-﻿using AtividadeEmGrupoP2.Domain.ValueObjects.Pagination;
+﻿using CSharpDesignPatternsInPractice.Domain.ValueObjects.Pagination;
 
-namespace AtividadeEmGrupoP2.Domain.Dtos.Request;
+namespace CSharpDesignPatternsInPractice.Domain.Dtos.Request;
 
 public record GetTeamsRequest : PaginatedRequestBase
 {

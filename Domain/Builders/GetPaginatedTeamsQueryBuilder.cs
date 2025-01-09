@@ -1,8 +1,8 @@
-﻿using AtividadeEmGrupoP2.Domain.Dtos.Request;
-using AtividadeEmGrupoP2.Domain.Entities;
-using AtividadeEmGrupoP2.Infra.Repositories.Interfaces;
+﻿using CSharpDesignPatternsInPractice.Domain.Dtos.Request;
+using CSharpDesignPatternsInPractice.Domain.Entities;
+using CSharpDesignPatternsInPractice.Infra.Repositories.Interfaces;
 
-namespace AtividadeEmGrupoP2.Domain.Builders;
+namespace CSharpDesignPatternsInPractice.Domain.Builders;
 
 public class GetPaginatedTeamsQueryBuilder :
     QueryBuilderBase<GetPaginatedTeamsQueryBuilder, FootballTeamEntity, GetTeamsRequest>

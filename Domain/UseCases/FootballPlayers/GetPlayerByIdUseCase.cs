@@ -1,7 +1,7 @@
-﻿using AtividadeEmGrupoP2.Domain.Entities;
-using AtividadeEmGrupoP2.Infra.Repositories.Interfaces;
+﻿using CSharpDesignPatternsInPractice.Domain.Entities;
+using CSharpDesignPatternsInPractice.Infra.Repositories.Interfaces;
 
-namespace AtividadeEmGrupoP2.Domain.UseCases.FootballPlayers;
+namespace CSharpDesignPatternsInPractice.Domain.UseCases.FootballPlayers;
 
 public class GetPlayerByIdUseCase(IFootballPlayerRepository _footballPlayerRepository) : IGetPlayerByIdUseCase
 {

@@ -1,6 +1,6 @@
-﻿using AtividadeEmGrupoP2.Domain.Entities.Common;
+﻿using CSharpDesignPatternsInPractice.Domain.Entities.Common;
 
-namespace AtividadeEmGrupoP2.Domain.Entities;
+namespace CSharpDesignPatternsInPractice.Domain.Entities;
 
 public class FootballPlayerEntity : AuditableEntityBase<Guid>
 {

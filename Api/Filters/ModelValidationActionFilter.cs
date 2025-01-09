@@ -1,11 +1,11 @@
-﻿using AtividadeEmGrupoP2.Domain.ValueObjects;
+﻿using CSharpDesignPatternsInPractice.Domain.ValueObjects;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System.Net;
 
-namespace AtividadeEmGrupoP2.Api.Filters;
+namespace CSharpDesignPatternsInPractice.Api.Filters;
 
 public class ModelValidationActionFilter : IAsyncActionFilter
 {

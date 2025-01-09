@@ -1,4 +1,4 @@
-﻿namespace AtividadeEmGrupoP2.Domain.CustomExceptions;
+﻿namespace CSharpDesignPatternsInPractice.Domain.CustomExceptions;
 
 public class ResourceNotFoundException : Exception
 {

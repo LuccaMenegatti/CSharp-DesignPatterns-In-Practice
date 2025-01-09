@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace AtividadeEmGrupoP2.Infra.Extensions;
+namespace CSharpDesignPatternsInPractice.Infra.Extensions;
 
 public static class ConfigurationExtension
 {

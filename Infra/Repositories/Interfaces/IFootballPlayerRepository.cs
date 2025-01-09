@@ -1,6 +1,6 @@
-﻿using AtividadeEmGrupoP2.Domain.Entities;
+﻿using CSharpDesignPatternsInPractice.Domain.Entities;
 
-namespace AtividadeEmGrupoP2.Infra.Repositories.Interfaces;
+namespace CSharpDesignPatternsInPractice.Infra.Repositories.Interfaces;
 
 public interface IFootballPlayerRepository : IBaseRepository<FootballPlayerEntity>
 {

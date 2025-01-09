@@ -1,4 +1,4 @@
-﻿namespace AtividadeEmGrupoP2.Domain.ValueObjects;
+﻿namespace CSharpDesignPatternsInPractice.Domain.ValueObjects;
 
 public static class OrderType
 {

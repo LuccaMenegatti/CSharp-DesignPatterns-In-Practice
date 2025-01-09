@@ -1,9 +1,9 @@
-﻿using AtividadeEmGrupoP2.Domain.ValueObjects;
-using AtividadeEmGrupoP2.Domain.ValueObjects.Pagination;
+﻿using CSharpDesignPatternsInPractice.Domain.ValueObjects;
+using CSharpDesignPatternsInPractice.Domain.ValueObjects.Pagination;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace AtividadeEmGrupoP2.Infra.Extensions;
+namespace CSharpDesignPatternsInPractice.Infra.Extensions;
 
 public static class QueryableExtensions
 {

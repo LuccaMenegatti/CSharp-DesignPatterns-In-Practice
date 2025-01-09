@@ -1,7 +1,7 @@
-﻿using AtividadeEmGrupoP2.Domain.Entities;
+﻿using CSharpDesignPatternsInPractice.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace AtividadeEmGrupoP2.Infra.Database.Interface;
+namespace CSharpDesignPatternsInPractice.Infra.Database.Interface;
 
 public interface IApplicationDbContext
 {

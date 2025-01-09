@@ -1,6 +1,6 @@
-﻿using AtividadeEmGrupoP2.Domain.Entities;
+﻿using CSharpDesignPatternsInPractice.Domain.Entities;
 
-namespace AtividadeEmGrupoP2.Domain.Memento.FootballTeam;
+namespace CSharpDesignPatternsInPractice.Domain.Memento.FootballTeam;
 
 public class FootballTeamMemento(FootballTeamEntity state)
 {

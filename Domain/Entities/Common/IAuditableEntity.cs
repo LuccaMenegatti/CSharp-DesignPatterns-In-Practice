@@ -1,4 +1,4 @@
-﻿namespace AtividadeEmGrupoP2.Domain.Entities.Common;
+﻿namespace CSharpDesignPatternsInPractice.Domain.Entities.Common;
 
 public interface IAuditableEntity
 {

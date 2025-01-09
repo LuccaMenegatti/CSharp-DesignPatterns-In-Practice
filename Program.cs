@@ -1,4 +1,4 @@
-using AtividadeEmGrupoP2.Api.Configurations;
+using CSharpDesignPatternsInPractice.Api.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
 

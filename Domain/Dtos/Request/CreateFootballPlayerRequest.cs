@@ -1,4 +1,4 @@
-﻿namespace AtividadeEmGrupoP2.Domain.Dtos.Request;
+﻿namespace CSharpDesignPatternsInPractice.Domain.Dtos.Request;
 
 public record CreateFootballPlayerRequest
 {

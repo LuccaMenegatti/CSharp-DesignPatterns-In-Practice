@@ -1,9 +1,9 @@
-﻿using AtividadeEmGrupoP2.Domain.Dtos.Request;
-using AtividadeEmGrupoP2.Domain.UseCases.FootballPlayers;
+﻿using CSharpDesignPatternsInPractice.Domain.Dtos.Request;
+using CSharpDesignPatternsInPractice.Domain.UseCases.FootballPlayers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AtividadeEmGrupoP2.Api.Controllers;
+namespace CSharpDesignPatternsInPractice.Api.Controllers;
 
 [ApiController]
 [Route("football_players")]
